@@ -1,0 +1,10 @@
+myshop_env/
+__pycache__/
+*.sqlite3
+*.key
+*.crt
+tests.py
+thumbs.db
+*.pyc
+.DS_Store
+media/

@@ -1,0 +1,55 @@
+{% load static i18n %}
+<!DOCTYPE html>
+{% get_current_language as LANGUAGE_CODE %}
+<html lang="{{ LANGUAGE_CODE|default:"en" }}" dir="{{ LANGUAGE_CODE|language_bidi|yesno:'rtl,ltr,auto' }}"  >
+  <head>
+    <meta charset="utf-8" />
+    <meta name="google" content="notranslate">
+    <title>{% block title %}{% trans "My shop" %}{% endblock %}</title>
+    <link href="{% static "css/base.css" %}" rel="stylesheet">
+    {% if LANGUAGE_CODE|language_bidi %}
+    <!-- css rtl -->
+    {% endif %}
+  </head>
+  <body>
+    <div id="header">
+      <a href="/" class="logo">{% trans "My shop" %}</a>
+      {% get_available_languages as LANGUAGES %}
+      <div class="languages">
+        <p>{% trans "Language" %}:</p>
+        <ul class="languages">
+          {% for language in LANGUAGES %}
+            <li>
+              <a href="/{{ language.0 }}/{{request.get_full_path|slice:"4:"}}"
+              {% if language.0 == LANGUAGE_CODE %} class="selected"{% endif %}>
+                {{ language.0|language_name_local }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div id="subheader">
+      <div class="cart">
+        {% with total_items=cart|length %}
+          {% if total_items > 0 %}
+            {% trans "Your cart" %}:
+            <a href="{% url "cart:cart_detail" %}">
+              {% blocktrans with total=cart.get_total_price count items=total_items %}
+                {{ items }} item, ${{ total }}
+              {% plural %}
+                {{ items }} items, ${{ total }}
+              {% endblocktrans %}
+            </a>
+          {% else %}
+            {% trans "Your cart is empty." %}
+          {% endif %}
+        {% endwith %}
+      </div>
+    </div>
+    <div id="content">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-16 20:32+0330\n"
+"PO-Revision-Date: 2021-10-16 00:55+0000\n"
+"Last-Translator:   <>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.9.7\n"
+
+#: .\cart\forms.py:12 .\cart\templates\cart\detail.html:16
+msgid "Quantity"
+msgstr "تعداد"
+
+#: .\cart\templates\cart\detail.html:6 .\cart\templates\cart\detail.html:10
+msgid "Your shopping cart"
+msgstr "سبد خرید"
+
+#: .\cart\templates\cart\detail.html:14
+msgid "Image"
+msgstr "عکس محصول"
+
+#: .\cart\templates\cart\detail.html:15
+msgid "Product"
+msgstr "کالا"
+
+#: .\cart\templates\cart\detail.html:17 .\cart\templates\cart\detail.html:44
+msgid "Remove"
+msgstr "حذف"
+
+#: .\cart\templates\cart\detail.html:18
+msgid "Unit price"
+msgstr "واحد قیمت"
+
+#: .\cart\templates\cart\detail.html:19
+msgid "Price"
+msgstr "قیمت"
+
+#: .\cart\templates\cart\detail.html:38
+msgid "Update"
+msgstr "اپدیت"
+
+#: .\cart\templates\cart\detail.html:55
+msgid "Subtotal"
+msgstr "جمع جزیی"
+
+#: .\cart\templates\cart\detail.html:60
+#, python-format
+msgid ""
+"\n"
+"            <td>\"%(code)s\" coupon (%(discount)s%% off)</td>\n"
+"          "
+msgstr ""
+"\n"
+"<td>\"%(code)s\" کوپن (%(discount)s%% تخفیف)</td>"
+
+#: .\cart\templates\cart\detail.html:68
+msgid "Total"
+msgstr "مجموع"
+
+#: .\cart\templates\cart\detail.html:74
+msgid "Apply a coupon"
+msgstr "افزودن کوپن"
+
+#: .\cart\templates\cart\detail.html:81
+msgid "Continue shopping"
+msgstr "برگشت به خرید"
+
+#: .\cart\templates\cart\detail.html:83
+msgid "Checkout"
+msgstr "پرداخت"
+
+#: .\coupons\forms.py:5
+msgid "Coupon"
+msgstr "کوپن"
+
+#: .\myshop\settings.py:121
+msgid "English"
+msgstr "انگلیسی"
+
+#: .\myshop\settings.py:122
+msgid "Spanish"
+msgstr "اسپانیایی"
+
+#: .\myshop\settings.py:123
+msgid "Persian"
+msgstr "فارسی"
+
+#: .\myshop\urls.py:30
+msgid "admin/"
+msgstr ""
+
+#: .\myshop\urls.py:31
+msgid "cart/"
+msgstr ""
+
+#: .\myshop\urls.py:33
+msgid "orders/"
+msgstr ""
+
+#: .\myshop\urls.py:34
+msgid "payment/"
+msgstr ""
+
+#: .\myshop\urls.py:35
+msgid "coupons/"
+msgstr ""
+
+#: .\payment\urls.py:8
+msgid "process/"
+msgstr ""
+
+#: .\payment\urls.py:9
+msgid "done/"
+msgstr ""
+
+#: .\payment\urls.py:10
+msgid "canceled/"
+msgstr ""
+
+#: .\shop\templates\shop\base.html:8 .\shop\templates\shop\base.html:16
+msgid "My shop"
+msgstr "فروشگاه من"
+
+#: .\shop\templates\shop\base.html:19
+msgid "Language"
+msgstr "زبان"
+
+#: .\shop\templates\shop\base.html:36
+msgid "Your cart"
+msgstr "سبد شما"
+
+#: .\shop\templates\shop\base.html:38
+#, python-format
+msgid ""
+"\n"
+"                %(items)s item, $%(total)s\n"
+"              "
+msgid_plural ""
+"\n"
+"                %(items)s items, $%(total)s\n"
+"              "
+msgstr[0] ""
+"\n"
+"%(items)s قلم, $%(total)s"
+msgstr[1] ""
+"\n"
+"%(items)s قلم, $%(total)s"
+
+#: .\shop\templates\shop\base.html:45
+msgid "Your cart is empty."
+msgstr "سبد خالی هست."
+
+#: .\shop\templates\shop\product\detail.html:23
+msgid "Add to cart"
+msgstr "افزودن به سبد"
+
+#: .\shop\templates\shop\product\list.html:6
+#: .\shop\templates\shop\product\list.html:24
+msgid "Products"
+msgstr "محصولات"
+
+#: .\shop\templates\shop\product\list.html:11
+msgid "Categories"
+msgstr "دسته ها"
+
+#: .\shop\templates\shop\product\list.html:14
+msgid "All"
+msgstr "همه"
